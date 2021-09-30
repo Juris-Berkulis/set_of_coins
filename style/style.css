@@ -16,7 +16,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #e5e5e5;
+  background: #eef2f4;
   padding-top: 124px;
 }
 
@@ -31,7 +31,7 @@
   font-size: 34px;
   line-height: 110.5%;
   color: #1b1c1e;
-  margin-bottom: 21px;
+  margin-bottom: 14px;
 }
 
 .lot_info {
@@ -144,7 +144,7 @@
   font-size: 18px;
   line-height: 110.5%;
   color: #1b1c1e;
-  margin-bottom: 61px;
+  margin-bottom: 54px;
 }
 
 .price__text {
@@ -302,7 +302,7 @@
   -webkit-box-shadow: 1px 2px 8px rgba(165, 165, 165, 0.15);
           box-shadow: 1px 2px 8px rgba(165, 165, 165, 0.15);
   border-radius: 10px;
-  padding: 28px 24px 24px;
+  padding: 24px;
   margin-bottom: 24px;
 }
 
@@ -447,7 +447,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 8px;
 }
 
 .now_price__description {
@@ -471,7 +471,7 @@
 }
 
 .leader {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .leader__description {
@@ -499,7 +499,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #1b1c1e;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .bid_wrapper {
@@ -540,7 +540,7 @@
   height: 42px;
   background: #e11e3e;
   border-radius: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -557,7 +557,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #1b1c1e;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .autobid_btn {
@@ -619,7 +619,7 @@
 }
 
 .deller__additional_images_item {
-  min-width: 29px;
+  min-width: 32px;
   max-width: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -845,6 +845,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mini_info__top_item_wrapper_img {
@@ -877,6 +880,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mini_info__bottom_item_wrapper_img-rates {
