@@ -17,7 +17,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #eef2f4;
-  padding-top: 124px;
+  padding-top: 113px;
 }
 
 .section_left {
@@ -95,10 +95,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 24px;
+  font-size: 0;
+  line-height: 0;
 }
 
-.basic__main_img {
+.basic__main_bg_img {
+  height: 480px;
   width: 494px;
+  background-image: url("../img/main_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
 }
 
 .basic__pannel {
