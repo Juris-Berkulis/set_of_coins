@@ -45,19 +45,21 @@
                 </div>
             </div>
         </section>
-        <section class="section_right">
+        <section class="section_right center_mobile">
             <p class="price">
                 <span class="price__text">Купить сейчас за </span>
                 <span class="price__number">500 &#8381</span>
             </p>
             <div class="action">
                 <a class="action__write" href="#">Написать продавцу</a>
+                <a class="action__mobile_buy_now" href="#">Купить сейчас</a>
+                <a class="action__mobile_write" href="#">Написать</a>
                 <button class="action__wriper_like">
                     <input class="action__write_input" type="checkbox" id="action__write_input">
                     <div class="action__write_wripper">
                         <label class="action__write_label" for="action__write_input">
                             <svg class="action__like_img" width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.23864 2.86885L9.99999 3.76291L10.7613 2.86885C11.6242 1.85565 12.9524 1.21411 14.32 1.21411C16.7245 1.21411 18.6 3.0896 18.6 5.49411C18.6 6.98003 17.9407 8.40638 16.5759 10.075C15.1996 11.7576 13.2124 13.5623 10.7203 15.8221L10.7188 15.8234L9.99744 16.4801L9.28052 15.8324C9.28022 15.8322 9.27992 15.8319 9.27962 15.8316C6.7877 13.5671 4.80062 11.7603 3.42426 10.0764C2.05924 8.40644 1.39999 6.98004 1.39999 5.49411C1.39999 3.0896 3.27548 1.21411 5.67999 1.21411C7.04761 1.21411 8.37583 1.85565 9.23864 2.86885Z" stroke="#C4CDDF" stroke-width="2"/>
+                                <path class="action__like_img_path" d="M9.23864 2.86885L9.99999 3.76291L10.7613 2.86885C11.6242 1.85565 12.9524 1.21411 14.32 1.21411C16.7245 1.21411 18.6 3.0896 18.6 5.49411C18.6 6.98003 17.9407 8.40638 16.5759 10.075C15.1996 11.7576 13.2124 13.5623 10.7203 15.8221L10.7188 15.8234L9.99744 16.4801L9.28052 15.8324C9.28022 15.8322 9.27992 15.8319 9.27962 15.8316C6.7877 13.5671 4.80062 11.7603 3.42426 10.0764C2.05924 8.40644 1.39999 6.98004 1.39999 5.49411C1.39999 3.0896 3.27548 1.21411 5.67999 1.21411C7.04761 1.21411 8.37583 1.85565 9.23864 2.86885Z" stroke="#C4CDDF" stroke-width="2"/>
                             </svg>
                         </label>
                     </div>
@@ -67,6 +69,20 @@
                 <img class="video_support__img" src="img/video_support.png" alt="видеопродажа" width="28px">
                 <span class="video_support__description">Запросить видеопродажу</span>
             </a>
+            <a class="video_support_mobile" href="#">
+                <img class="video_support_mobile__img" src="img/video_sale_for_mobile.png" alt="видеопродажа" width="68px">
+                <div class="video_support_mobile__wrapper">
+                    <p class="video_support_mobile__text_1">Видеопродажа</p>
+                    <p class="video_support_mobile__text_2">Демонстрация товара в мессенджере</p>
+                </div>
+            </a>
+            <div class="page_info_mobile">
+                <p class="page_info_mobile__price">
+                    <span class="page_info_mobile__price_number">500 &#8381</span>
+                    <span class="page_info_mobile__price_discription"> Цена лота “Купить сейчас”</span>
+                </p>
+                <h2 class="page_info_mobile__tittle">Набор монет 1987 год</h2>
+            </div>
             <div class="scoreboard">
                 <div class="scoreboard__timer">
                     <div class="scoreboard__timer_info">
@@ -79,7 +95,7 @@
                         <p class="scoreboard__timer_separator_symbol">:</p>
                     </div>
                     <div class="scoreboard__timer_info">
-                        <p class="scoreboard__timer_description">Чвсов</p>
+                        <p class="scoreboard__timer_description">Часов</p>
                         <div class="scoreboard__timer_wrapper_number">
                             <p class="scoreboard__timer_number" id="scoreboard__timer_number_hours">?</p>
                         </div>
@@ -115,6 +131,7 @@
                     <span class="leader__description">Лидер: </span>
                     <span class="leader__name">Участник</span>
                 </p>
+                <div class="scoreboard_line"></div>
                 <p class="your_bid_description">Ваша ставка</p>
                 <div class="bid_wrapper">
                     <input class="bid_wrapper__input" type="text">
@@ -128,129 +145,131 @@
                 </div>
                 <button class="autobid_btn">Поставить Автобид</button>
             </div>
-            <div class="seller">
-                <div class="seller__top_info">
-                    <div class="seller__left_info">
-                        <img class="seller__main_imgage" src="img/pro.png" alt="pro" width="78px">
-                        <div class="deller__additional_images">
-                            <div class="deller__additional_images_top">
-                                <div class="deller__additional_images_item deller__additional_images_top_left">
-                                    <img class="deller__additional_images_item_img deller__additional_images_top_left_img" src="img/contact_icon_left_01.png" alt="contact_icon_left_01" width="13px">
-                                    <p class="deller__additional_images_item_description deller__additional_images_top_left_description">5,0</p>
+            <div class="wrapper_for_mpbile">
+                <div class="seller">
+                    <div class="seller__top_info">
+                        <div class="seller__left_info">
+                            <img class="seller__main_imgage" src="img/pro.png" alt="pro" width="78px">
+                            <div class="deller__additional_images">
+                                <div class="deller__additional_images_top">
+                                    <div class="deller__additional_images_item deller__additional_images_top_left">
+                                        <img class="deller__additional_images_item_img deller__additional_images_top_left_img" src="img/contact_icon_left_01.png" alt="contact_icon_left_01" width="13px">
+                                        <p class="deller__additional_images_item_description deller__additional_images_top_left_description">5,0</p>
+                                    </div>
+                                    <div class="deller__additional_images_item deller__additional_images_top_right">
+                                        <img class="deller__additional_images_item_img deller__additional_images_top_right_img" src="img/contact_icon_left_03.png" alt="contact_icon_left_03" width="13px">
+                                        <p class="deller__additional_images_item_description deller__additional_images_top_right_description">6</p>
+                                    </div>
                                 </div>
-                                <div class="deller__additional_images_item deller__additional_images_top_right">
-                                    <img class="deller__additional_images_item_img deller__additional_images_top_right_img" src="img/contact_icon_left_03.png" alt="contact_icon_left_03" width="13px">
-                                    <p class="deller__additional_images_item_description deller__additional_images_top_right_description">6</p>
+                                <div class="deller__additional_images_bottom">
+                                    <div class="deller__additional_images_item deller__additional_images_bottom_left">
+                                        <img class="deller__additional_images_item_img deller__additional_images_bottom_left_img" src="img/contact_icon_left_02.png" alt="contact_icon_left_02" width="13px">
+                                        <p class="deller__additional_images_item_description deller__additional_images_bottom_left_description">23</p>
+                                    </div>
+                                    <div class="deller__additional_images_item deller__additional_images_bottom_right">
+                                        <img class="deller__additional_images_item_img deller__additional_images_bottom_right_img" src="img/contact_icon_left_04.png" alt="contact_icon_left_04" width="13px">
+                                        <p class="deller__additional_images_item_description deller__additional_images_bottom_right_description">31</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="deller__additional_images_bottom">
-                                <div class="deller__additional_images_item deller__additional_images_bottom_left">
-                                    <img class="deller__additional_images_item_img deller__additional_images_bottom_left_img" src="img/contact_icon_left_02.png" alt="contact_icon_left_02" width="13px">
-                                    <p class="deller__additional_images_item_description deller__additional_images_bottom_left_description">23</p>
+                        </div>
+                        <div class="seller__right_info">
+                            <p class="seller__name">Екатерина</p>
+                            <div class="seller__list_info">
+                                <div class="seller__list_info_item seller__point">
+                                    <img class="seller__list_info_item_img seller__point_img" src="img/contact_icon_right_01.png" alt="contact_icon_right_01" width="14px">
+                                    <p class="seller__list_info_item_description seller__point_description">Санкт-Петербург</p>
                                 </div>
-                                <div class="deller__additional_images_item deller__additional_images_bottom_right">
-                                    <img class="deller__additional_images_item_img deller__additional_images_bottom_right_img" src="img/contact_icon_left_04.png" alt="contact_icon_left_04" width="13px">
-                                    <p class="deller__additional_images_item_description deller__additional_images_bottom_right_description">31</p>
+                                <div class="seller__list_info_item seller__category">
+                                    <img class="seller__list_info_item_img seller__category_img" src="img/contact_icon_right_02.png" alt="contact_icon_right_02" width="14px">
+                                    <p class="seller__list_info_item_description seller__category_description">Частное лицо</p>
+                                </div>
+                                <div class="seller__list_info_item seller__registration">
+                                    <img class="seller__list_info_item_img seller__registration_img" src="img/contact_icon_right_03.png" alt="contact_icon_right_03" width="14px">
+                                    <p class="seller__list_info_item_description seller__registration_description">На AT-WORK с февраля </p>
+                                </div>
+                                <div class="seller__list_info_item seller__inline">
+                                    <img class="seller__list_info_item_img seller__inline_img" src="img/contact_icon_right_04.png" alt="contact_icon_right_04" width="14px">
+                                    <p class="seller__list_info_item_description seller__inline_description">Онлайн 1 день назад</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="seller__right_info">
-                        <p class="seller__name">Екатерина</p>
-                        <div class="seller__list_info">
-                            <div class="seller__list_info_item seller__point">
-                                <img class="seller__list_info_item_img seller__point_img" src="img/contact_icon_right_01.png" alt="contact_icon_right_01" width="14px">
-                                <p class="seller__list_info_item_description seller__point_description">Санкт-Петербург</p>
+                    <div class="seller__line"></div>
+                    <div class="seller__bottom_info">
+                        <button class="seller__btn seller__btn-subscribe">
+                            <input class="seller__btn_checkbox" type="checkbox" id="seller__btn_subscribe">
+                            <div class="seller__btn_wrapper">
+                                <label class="seller__btn_label" for="seller__btn_subscribe">
+                                    <img class="seller__img seller__img_subscribe" src="img/contact_icon_bottom_01.png" alt="contact_icon_bottom_01" width="41px">
+                                    <img class="seller__img_hover seller__img_subscribe_hover" src="img/contact_icon_bottom_01_hover.png" alt="contact_icon_bottom_01" width="41px">
+                                    <img class="seller__img_selected seller__img_subscribe_selected" src="img/contact_icon_bottom_01_selected.png" alt="contact_icon_bottom_01" width="41px">
+                                    <p class="seller__description seller__description_subscribe">Подписаться</p>
+                                </label>
                             </div>
-                            <div class="seller__list_info_item seller__category">
-                                <img class="seller__list_info_item_img seller__category_img" src="img/contact_icon_right_02.png" alt="contact_icon_right_02" width="14px">
-                                <p class="seller__list_info_item_description seller__category_description">Частное лицо</p>
+                        </button>
+                        <button class="seller__btn seller__btn-favorites">
+                            <input class="seller__btn_checkbox" type="checkbox" id="seller__btn_favorites">
+                            <div class="seller__btn_wrapper">
+                                <label class="seller__btn_label" for="seller__btn_favorites">
+                                    <img class="seller__img seller__img_favorites" src="img/contact_icon_bottom_02.png" alt="contact_icon_bottom_02" width="39px">
+                                    <img class="seller__img_hover seller__img_favorites_hover" src="img/contact_icon_bottom_02_hover.png" alt="contact_icon_bottom_02" width="39px">
+                                    <img class="seller__img_selected seller__img_favorites_selected" src="img/contact_icon_bottom_02_selected.png" alt="contact_icon_bottom_02" width="39px">
+                                    <p class="seller__description seller__description_favorites">В избранное</p>
+                                </label>
                             </div>
-                            <div class="seller__list_info_item seller__registration">
-                                <img class="seller__list_info_item_img seller__registration_img" src="img/contact_icon_right_03.png" alt="contact_icon_right_03" width="14px">
-                                <p class="seller__list_info_item_description seller__registration_description">На AT-WORK с февраля </p>
-                            </div>
-                            <div class="seller__list_info_item seller__inline">
-                                <img class="seller__list_info_item_img seller__inline_img" src="img/contact_icon_right_04.png" alt="contact_icon_right_04" width="14px">
-                                <p class="seller__list_info_item_description seller__inline_description">Онлайн 1 день назад</p>
-                            </div>
-                        </div>
+                        </button>
+                        <button class="seller__btn seller__btn-contact">
+                            <img class="seller__img_contact" src="img/contact_icon_bottom_03.png" alt="contact_icon_bottom_03" width="34px">
+                            <img class="seller__img_contact_hover" src="img/contact_icon_bottom_03_hover.png" alt="contact_icon_bottom_03" width="34px">
+                            <p class="seller__description seller__description_contact">Связаться</p>
+                        </button>
                     </div>
                 </div>
-                <div class="seller__line"></div>
-                <div class="seller__bottom_info">
-                    <button class="seller__btn seller__btn-subscribe">
-                        <input class="seller__btn_checkbox" type="checkbox" id="seller__btn_subscribe">
-                        <div class="seller__btn_wrapper">
-                            <label class="seller__btn_label" for="seller__btn_subscribe">
-                                <img class="seller__img seller__img_subscribe" src="img/contact_icon_bottom_01.png" alt="contact_icon_bottom_01" width="41px">
-                                <img class="seller__img_hover seller__img_subscribe_hover" src="img/contact_icon_bottom_01_hover.png" alt="contact_icon_bottom_01" width="41px">
-                                <img class="seller__img_selected seller__img_subscribe_selected" src="img/contact_icon_bottom_01_selected.png" alt="contact_icon_bottom_01" width="41px">
-                                <p class="seller__description seller__description_subscribe">Подписаться</p>
-                            </label>
+                <div class="mini_info">
+                    <div class="mini_info__top">
+                        <div class="mini_info__top_item">
+                            <div class="mini_info__top_item_wrapper_img">
+                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.456 11.0914C1.36 11.0914 1.29067 11.086 1.248 11.0754C1.20533 11.0754 1.14133 11.0647 1.056 11.0434L0.944 10.0034C1.12533 10.0034 1.25867 9.95535 1.344 9.85935C1.44 9.76335 1.488 9.58735 1.488 9.33135V0.691353H2.96C3.45067 1.79002 3.93067 2.88335 4.4 3.97135C4.86933 5.05935 5.33333 6.15802 5.792 7.26735L6.704 9.33135H6.768C6.72533 8.83002 6.69333 8.37135 6.672 7.95535C6.65067 7.53935 6.62933 7.15002 6.608 6.78735C6.59733 6.41402 6.58667 6.05669 6.576 5.71535C6.576 5.36335 6.576 4.99535 6.576 4.61135V2.08335C6.576 1.55002 6.672 1.15535 6.864 0.899353C7.06667 0.632686 7.38667 0.499352 7.824 0.499352C7.90933 0.499352 7.97333 0.504686 8.016 0.515352C8.06933 0.526019 8.13867 0.54202 8.224 0.563353L8.336 1.60335C8.15467 1.60335 8.016 1.65135 7.92 1.74735C7.824 1.83269 7.776 2.00335 7.776 2.25935V10.8994H6.304C5.824 9.80069 5.34933 8.70735 4.88 7.61935C4.41067 6.53135 3.94133 5.42735 3.472 4.30735L2.576 2.25935H2.512C2.55467 2.76069 2.58667 3.21935 2.608 3.63535C2.62933 4.05135 2.64533 4.44602 2.656 4.81935C2.66667 5.18202 2.672 5.53935 2.672 5.89135C2.68267 6.23269 2.688 6.59535 2.688 6.97935V9.52335C2.688 10.046 2.592 10.4407 2.4 10.7074C2.208 10.9634 1.89333 11.0914 1.456 11.0914ZM11.616 6.48335C11.2747 6.48335 10.9547 6.42469 10.656 6.30735C10.3573 6.19002 10.096 6.02469 9.872 5.81135C9.648 5.58735 9.472 5.31535 9.344 4.99535C9.216 4.67535 9.152 4.31269 9.152 3.90735C9.152 3.49135 9.216 3.12335 9.344 2.80335C9.472 2.48335 9.648 2.21669 9.872 2.00335C10.096 1.77935 10.3573 1.61402 10.656 1.50735C10.9547 1.39002 11.2747 1.33135 11.616 1.33135C11.9467 1.33135 12.2613 1.39002 12.56 1.50735C12.8587 1.61402 13.12 1.77935 13.344 2.00335C13.568 2.21669 13.744 2.48335 13.872 2.80335C14 3.12335 14.064 3.49135 14.064 3.90735C14.064 4.31269 14 4.67535 13.872 4.99535C13.744 5.31535 13.568 5.58735 13.344 5.81135C13.12 6.02469 12.8587 6.19002 12.56 6.30735C12.2613 6.42469 11.9467 6.48335 11.616 6.48335ZM11.616 5.60335C12.032 5.60335 12.3627 5.45402 12.608 5.15535C12.864 4.85669 12.992 4.44069 12.992 3.90735C12.992 3.36335 12.864 2.94202 12.608 2.64335C12.3627 2.34469 12.032 2.19535 11.616 2.19535C11.2 2.19535 10.864 2.34469 10.608 2.64335C10.3627 2.94202 10.24 3.36335 10.24 3.90735C10.24 4.44069 10.3627 4.85669 10.608 5.15535C10.864 5.45402 11.2 5.60335 11.616 5.60335ZM9.584 8.49935V7.69935H13.632V8.49935H9.584Z" fill="#767D86"/>
+                                </svg>
+                            </div>
+                            <p class="mini_info__top_item_description">548</p>
                         </div>
-                    </button>
-                    <button class="seller__btn seller__btn-favorites">
-                        <input class="seller__btn_checkbox" type="checkbox" id="seller__btn_favorites">
-                        <div class="seller__btn_wrapper">
-                            <label class="seller__btn_label" for="seller__btn_favorites">
-                                <img class="seller__img seller__img_favorites" src="img/contact_icon_bottom_02.png" alt="contact_icon_bottom_02" width="39px">
-                                <img class="seller__img_hover seller__img_favorites_hover" src="img/contact_icon_bottom_02_hover.png" alt="contact_icon_bottom_02" width="39px">
-                                <img class="seller__img_selected seller__img_favorites_selected" src="img/contact_icon_bottom_02_selected.png" alt="contact_icon_bottom_02" width="39px">
-                                <p class="seller__description seller__description_favorites">В избранное</p>
-                            </label>
+                        <div class="mini_info__top_item">
+                            <div class="mini_info__top_item_wrapper_img">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9722 5.74067C14.4233 4.32086 13.4704 3.09301 12.2313 2.20888C10.9922 1.32474 9.52114 0.823064 8 0.765862C6.47886 0.823064 5.00783 1.32474 3.76871 2.20888C2.52959 3.09301 1.57669 4.32086 1.0278 5.74067C0.990733 5.8432 0.990733 5.95548 1.0278 6.05801C1.57669 7.47782 2.52959 8.70566 3.76871 9.5898C5.00783 10.4739 6.47886 10.9756 8 11.0328C9.52114 10.9756 10.9922 10.4739 12.2313 9.5898C13.4704 8.70566 14.4233 7.47782 14.9722 6.05801C15.0093 5.95548 15.0093 5.8432 14.9722 5.74067V5.74067ZM8 8.93276C7.40005 8.93276 6.81357 8.75485 6.31472 8.42154C5.81588 8.08822 5.42708 7.61446 5.19749 7.06018C4.96789 6.50589 4.90782 5.89597 5.02487 5.30755C5.14191 4.71912 5.43082 4.17862 5.85505 3.75439C6.27928 3.33016 6.81978 3.04125 7.40821 2.92421C7.99663 2.80716 8.60655 2.86723 9.16084 3.09683C9.71512 3.32642 10.1889 3.71522 10.5222 4.21406C10.8555 4.71291 11.0334 5.29939 11.0334 5.89934C11.0322 6.70347 10.7122 7.47432 10.1436 8.04293C9.57498 8.61154 8.80413 8.93152 8 8.93276V8.93276Z" stroke="#767D86"/>
+                                </svg>
+                            </div>
+                            <p class="mini_info__top_item_description">211(+2)</p>
                         </div>
-                    </button>
-                    <button class="seller__btn seller__btn-contact">
-                        <img class="seller__img_contact" src="img/contact_icon_bottom_03.png" alt="contact_icon_bottom_03" width="34px">
-                        <img class="seller__img_contact_hover" src="img/contact_icon_bottom_03_hover.png" alt="contact_icon_bottom_03" width="34px">
-                        <p class="seller__description seller__description_contact">Связаться</p>
-                    </button>
-                </div>
-            </div>
-            <div class="mini_info">
-                <div class="mini_info__top">
-                    <div class="mini_info__top_item">
-                        <div class="mini_info__top_item_wrapper_img">
-                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.456 11.0914C1.36 11.0914 1.29067 11.086 1.248 11.0754C1.20533 11.0754 1.14133 11.0647 1.056 11.0434L0.944 10.0034C1.12533 10.0034 1.25867 9.95535 1.344 9.85935C1.44 9.76335 1.488 9.58735 1.488 9.33135V0.691353H2.96C3.45067 1.79002 3.93067 2.88335 4.4 3.97135C4.86933 5.05935 5.33333 6.15802 5.792 7.26735L6.704 9.33135H6.768C6.72533 8.83002 6.69333 8.37135 6.672 7.95535C6.65067 7.53935 6.62933 7.15002 6.608 6.78735C6.59733 6.41402 6.58667 6.05669 6.576 5.71535C6.576 5.36335 6.576 4.99535 6.576 4.61135V2.08335C6.576 1.55002 6.672 1.15535 6.864 0.899353C7.06667 0.632686 7.38667 0.499352 7.824 0.499352C7.90933 0.499352 7.97333 0.504686 8.016 0.515352C8.06933 0.526019 8.13867 0.54202 8.224 0.563353L8.336 1.60335C8.15467 1.60335 8.016 1.65135 7.92 1.74735C7.824 1.83269 7.776 2.00335 7.776 2.25935V10.8994H6.304C5.824 9.80069 5.34933 8.70735 4.88 7.61935C4.41067 6.53135 3.94133 5.42735 3.472 4.30735L2.576 2.25935H2.512C2.55467 2.76069 2.58667 3.21935 2.608 3.63535C2.62933 4.05135 2.64533 4.44602 2.656 4.81935C2.66667 5.18202 2.672 5.53935 2.672 5.89135C2.68267 6.23269 2.688 6.59535 2.688 6.97935V9.52335C2.688 10.046 2.592 10.4407 2.4 10.7074C2.208 10.9634 1.89333 11.0914 1.456 11.0914ZM11.616 6.48335C11.2747 6.48335 10.9547 6.42469 10.656 6.30735C10.3573 6.19002 10.096 6.02469 9.872 5.81135C9.648 5.58735 9.472 5.31535 9.344 4.99535C9.216 4.67535 9.152 4.31269 9.152 3.90735C9.152 3.49135 9.216 3.12335 9.344 2.80335C9.472 2.48335 9.648 2.21669 9.872 2.00335C10.096 1.77935 10.3573 1.61402 10.656 1.50735C10.9547 1.39002 11.2747 1.33135 11.616 1.33135C11.9467 1.33135 12.2613 1.39002 12.56 1.50735C12.8587 1.61402 13.12 1.77935 13.344 2.00335C13.568 2.21669 13.744 2.48335 13.872 2.80335C14 3.12335 14.064 3.49135 14.064 3.90735C14.064 4.31269 14 4.67535 13.872 4.99535C13.744 5.31535 13.568 5.58735 13.344 5.81135C13.12 6.02469 12.8587 6.19002 12.56 6.30735C12.2613 6.42469 11.9467 6.48335 11.616 6.48335ZM11.616 5.60335C12.032 5.60335 12.3627 5.45402 12.608 5.15535C12.864 4.85669 12.992 4.44069 12.992 3.90735C12.992 3.36335 12.864 2.94202 12.608 2.64335C12.3627 2.34469 12.032 2.19535 11.616 2.19535C11.2 2.19535 10.864 2.34469 10.608 2.64335C10.3627 2.94202 10.24 3.36335 10.24 3.90735C10.24 4.44069 10.3627 4.85669 10.608 5.15535C10.864 5.45402 11.2 5.60335 11.616 5.60335ZM9.584 8.49935V7.69935H13.632V8.49935H9.584Z" fill="#767D86"/>
-                            </svg>
+                        <div class="mini_info__top_item">
+                            <div class="mini_info__top_item_wrapper_img">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.61932 2.26404L7 2.71107L7.38068 2.26404C8.05188 1.47584 9.08339 0.976868 10.15 0.976868C12.0299 0.976868 13.5 2.44701 13.5 4.32687C13.5 5.48563 12.9834 6.57611 11.9724 7.81218C10.9556 9.05528 9.49169 10.3839 7.67913 12.0275L7.67841 12.0281C7.2966 12.3757 6.70096 12.3775 6.32058 12.0342C4.50822 10.3873 3.04452 9.05712 2.02776 7.81319C1.01662 6.57613 0.5 5.48563 0.5 4.32687C0.5 2.44701 1.97014 0.976868 3.85 0.976868C4.91661 0.976868 5.94812 1.47584 6.61932 2.26404Z" fill="white" stroke="#767D86"/>
+                                </svg>
+                            </div>
+                            <p class="mini_info__top_item_description">211(+2)</p>
                         </div>
-                        <p class="mini_info__top_item_description">548</p>
                     </div>
-                    <div class="mini_info__top_item">
-                        <div class="mini_info__top_item_wrapper_img">
-                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.9722 5.74067C14.4233 4.32086 13.4704 3.09301 12.2313 2.20888C10.9922 1.32474 9.52114 0.823064 8 0.765862C6.47886 0.823064 5.00783 1.32474 3.76871 2.20888C2.52959 3.09301 1.57669 4.32086 1.0278 5.74067C0.990733 5.8432 0.990733 5.95548 1.0278 6.05801C1.57669 7.47782 2.52959 8.70566 3.76871 9.5898C5.00783 10.4739 6.47886 10.9756 8 11.0328C9.52114 10.9756 10.9922 10.4739 12.2313 9.5898C13.4704 8.70566 14.4233 7.47782 14.9722 6.05801C15.0093 5.95548 15.0093 5.8432 14.9722 5.74067V5.74067ZM8 8.93276C7.40005 8.93276 6.81357 8.75485 6.31472 8.42154C5.81588 8.08822 5.42708 7.61446 5.19749 7.06018C4.96789 6.50589 4.90782 5.89597 5.02487 5.30755C5.14191 4.71912 5.43082 4.17862 5.85505 3.75439C6.27928 3.33016 6.81978 3.04125 7.40821 2.92421C7.99663 2.80716 8.60655 2.86723 9.16084 3.09683C9.71512 3.32642 10.1889 3.71522 10.5222 4.21406C10.8555 4.71291 11.0334 5.29939 11.0334 5.89934C11.0322 6.70347 10.7122 7.47432 10.1436 8.04293C9.57498 8.61154 8.80413 8.93152 8 8.93276V8.93276Z" stroke="#767D86"/>
-                            </svg>
+                    <div class="mini_info__bottom">
+                        <div class="mini_info__bottom_item">
+                            <div class="mini_info__bottom_item_wrapper_img mini_info__bottom_item_wrapper_img-rates">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.14127 0.939932C6.46313 0.617846 6.98518 0.617753 7.30715 0.939726L11.3269 4.95948C11.6487 5.28127 11.6489 5.80295 11.3273 6.12497C11.1064 6.34619 10.7794 6.42342 10.4828 6.32439L10.3581 6.28275L6.05973 2.007C6.04085 1.98822 6.02084 1.97125 5.99994 1.95611L5.94228 1.78299C5.8437 1.48696 5.92072 1.16064 6.14127 0.939932ZM5.33165 2.6917L2.47438 5.54852L6.71732 9.79147L7.66678 8.84202L10.9661 12.142C11.2264 12.4023 11.6485 12.4023 11.9088 12.142C12.1691 11.8817 12.1691 11.4597 11.9088 11.1994L8.60878 7.89935L9.58506 6.92425L5.35449 2.71597C5.34655 2.70807 5.33894 2.69998 5.33165 2.6917ZM1.67804 6.16639L6.10004 10.5884L6.13579 10.7314C6.20837 11.0217 6.12325 11.3288 5.91159 11.5403C5.579 11.8727 5.03998 11.8726 4.70751 11.5401L0.72648 7.55905C0.393834 7.22641 0.39393 6.68705 0.726693 6.35453C0.938118 6.14325 1.24483 6.05828 1.53483 6.13066L1.67804 6.16639Z" fill="#4A80AA"/>
+                                </svg>
+                            </div>
+                            <p class="mini_info__bottom_item_description mini_info__bottom_item_description-rates">4 ставки</p>
                         </div>
-                        <p class="mini_info__top_item_description">211(+2)</p>
-                    </div>
-                    <div class="mini_info__top_item">
-                        <div class="mini_info__top_item_wrapper_img">
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.61932 2.26404L7 2.71107L7.38068 2.26404C8.05188 1.47584 9.08339 0.976868 10.15 0.976868C12.0299 0.976868 13.5 2.44701 13.5 4.32687C13.5 5.48563 12.9834 6.57611 11.9724 7.81218C10.9556 9.05528 9.49169 10.3839 7.67913 12.0275L7.67841 12.0281C7.2966 12.3757 6.70096 12.3775 6.32058 12.0342C4.50822 10.3873 3.04452 9.05712 2.02776 7.81319C1.01662 6.57613 0.5 5.48563 0.5 4.32687C0.5 2.44701 1.97014 0.976868 3.85 0.976868C4.91661 0.976868 5.94812 1.47584 6.61932 2.26404Z" fill="white" stroke="#767D86"/>
-                            </svg>
+                        <div class="mini_info__bottom_item">
+                            <div class="mini_info__bottom_item_wrapper_img mini_info__bottom_item_wrapper_img-status">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5.00005" cy="4.89928" r="4.41023" fill="#7CC076"/>
+                                </svg>
+                            </div>
+                            <p class="mini_info__bottom_item_description mini_info__bottom_item_description-status">Открыто</p>
                         </div>
-                        <p class="mini_info__top_item_description">211(+2)</p>
-                    </div>
-                </div>
-                <div class="mini_info__bottom">
-                    <div class="mini_info__bottom_item">
-                        <div class="mini_info__bottom_item_wrapper_img mini_info__bottom_item_wrapper_img-rates">
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.14127 0.939932C6.46313 0.617846 6.98518 0.617753 7.30715 0.939726L11.3269 4.95948C11.6487 5.28127 11.6489 5.80295 11.3273 6.12497C11.1064 6.34619 10.7794 6.42342 10.4828 6.32439L10.3581 6.28275L6.05973 2.007C6.04085 1.98822 6.02084 1.97125 5.99994 1.95611L5.94228 1.78299C5.8437 1.48696 5.92072 1.16064 6.14127 0.939932ZM5.33165 2.6917L2.47438 5.54852L6.71732 9.79147L7.66678 8.84202L10.9661 12.142C11.2264 12.4023 11.6485 12.4023 11.9088 12.142C12.1691 11.8817 12.1691 11.4597 11.9088 11.1994L8.60878 7.89935L9.58506 6.92425L5.35449 2.71597C5.34655 2.70807 5.33894 2.69998 5.33165 2.6917ZM1.67804 6.16639L6.10004 10.5884L6.13579 10.7314C6.20837 11.0217 6.12325 11.3288 5.91159 11.5403C5.579 11.8727 5.03998 11.8726 4.70751 11.5401L0.72648 7.55905C0.393834 7.22641 0.39393 6.68705 0.726693 6.35453C0.938118 6.14325 1.24483 6.05828 1.53483 6.13066L1.67804 6.16639Z" fill="#4A80AA"/>
-                            </svg>
-                        </div>
-                        <p class="mini_info__bottom_item_description mini_info__bottom_item_description-rates">4 ставки</p>
-                    </div>
-                    <div class="mini_info__bottom_item">
-                        <div class="mini_info__bottom_item_wrapper_img mini_info__bottom_item_wrapper_img-status">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="5.00005" cy="4.89928" r="4.41023" fill="#7CC076"/>
-                            </svg>
-                        </div>
-                        <p class="mini_info__bottom_item_description mini_info__bottom_item_description-status">Открыто</p>
                     </div>
                 </div>
             </div>
