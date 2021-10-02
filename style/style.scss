@@ -777,6 +777,10 @@
   cursor: pointer;
 }
 
+.complain_btn__img {
+  vertical-align: middle;
+}
+
 .complain_btn__img-1 {
   margin-right: 2px;
 }
@@ -790,6 +794,7 @@
   font-size: 14px;
   line-height: 110%;
   color: #767d86;
+  vertical-align: middle;
 }
 
 @media (max-width: 1140px), (orientation: portrait) {
