@@ -28,4 +28,4 @@ function countdownTimeStart(endTime){
     }, 1000);
 }
 
-countdownTimeStart("Dec 31, 2021 15:00:00");
+countdownTimeStart("May 23, 2024 15:00:00");
